@@ -10,9 +10,18 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    let progress = ProgressView()
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        self.view.addSubview(progress)
+        progress.snp.makeConstraints { (make) in
+            make.top.equalTo(self.view.safeAreaInsets.top).offset(30 + 64)
+            make.centerX.equalTo(self.view)
+            make.width.equalTo(200)
+        }
+
     }
 
 

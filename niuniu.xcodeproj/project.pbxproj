@@ -14,6 +14,7 @@
 		0475EE252238DFDC009A7560 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0475EE232238DFDC009A7560 /* LaunchScreen.storyboard */; };
 		0475EE302238DFDC009A7560 /* niuniuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0475EE2F2238DFDC009A7560 /* niuniuTests.swift */; };
 		0475EE3B2238DFDC009A7560 /* niuniuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0475EE3A2238DFDC009A7560 /* niuniuUITests.swift */; };
+		0475EE4B2238ED3B009A7560 /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0475EE4A2238ED3B009A7560 /* ProgressView.swift */; };
 		28BE1CDDE78541D20CB7A304 /* Pods_niuniu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FD026FFA03F9CBFFA16C22B /* Pods_niuniu.framework */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +49,7 @@
 		0475EE362238DFDC009A7560 /* niuniuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = niuniuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0475EE3A2238DFDC009A7560 /* niuniuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = niuniuUITests.swift; sourceTree = "<group>"; };
 		0475EE3C2238DFDC009A7560 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0475EE4A2238ED3B009A7560 /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
 		4D1B462C08D83DE7F81112F1 /* Pods-niuniu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-niuniu.release.xcconfig"; path = "Pods/Target Support Files/Pods-niuniu/Pods-niuniu.release.xcconfig"; sourceTree = "<group>"; };
 		8FD026FFA03F9CBFFA16C22B /* Pods_niuniu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_niuniu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		918C50F35E88EF8B726ACDCA /* Pods-niuniu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-niuniu.debug.xcconfig"; path = "Pods/Target Support Files/Pods-niuniu/Pods-niuniu.debug.xcconfig"; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 				0475EE212238DFDC009A7560 /* Assets.xcassets */,
 				0475EE232238DFDC009A7560 /* LaunchScreen.storyboard */,
 				0475EE262238DFDC009A7560 /* Info.plist */,
+				0475EE4A2238ED3B009A7560 /* ProgressView.swift */,
 			);
 			path = niuniu;
 			sourceTree = "<group>";
@@ -288,6 +291,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-niuniu/Pods-niuniu-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -295,6 +299,7 @@
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -333,6 +338,7 @@
 			files = (
 				0475EE1D2238DFD9009A7560 /* ViewController.swift in Sources */,
 				0475EE1B2238DFD9009A7560 /* AppDelegate.swift in Sources */,
+				0475EE4B2238ED3B009A7560 /* ProgressView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
