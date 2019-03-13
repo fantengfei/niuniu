@@ -14,6 +14,7 @@
 		0475EE252238DFDC009A7560 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0475EE232238DFDC009A7560 /* LaunchScreen.storyboard */; };
 		0475EE302238DFDC009A7560 /* niuniuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0475EE2F2238DFDC009A7560 /* niuniuTests.swift */; };
 		0475EE3B2238DFDC009A7560 /* niuniuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0475EE3A2238DFDC009A7560 /* niuniuUITests.swift */; };
+		28BE1CDDE78541D20CB7A304 /* Pods_niuniu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FD026FFA03F9CBFFA16C22B /* Pods_niuniu.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,9 @@
 		0475EE362238DFDC009A7560 /* niuniuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = niuniuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0475EE3A2238DFDC009A7560 /* niuniuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = niuniuUITests.swift; sourceTree = "<group>"; };
 		0475EE3C2238DFDC009A7560 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D1B462C08D83DE7F81112F1 /* Pods-niuniu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-niuniu.release.xcconfig"; path = "Pods/Target Support Files/Pods-niuniu/Pods-niuniu.release.xcconfig"; sourceTree = "<group>"; };
+		8FD026FFA03F9CBFFA16C22B /* Pods_niuniu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_niuniu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		918C50F35E88EF8B726ACDCA /* Pods-niuniu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-niuniu.debug.xcconfig"; path = "Pods/Target Support Files/Pods-niuniu/Pods-niuniu.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28BE1CDDE78541D20CB7A304 /* Pods_niuniu.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +86,8 @@
 				0475EE2E2238DFDC009A7560 /* niuniuTests */,
 				0475EE392238DFDC009A7560 /* niuniuUITests */,
 				0475EE182238DFD9009A7560 /* Products */,
+				9017DB1E3FC1F22FA032D849 /* Pods */,
+				FFE5DF424921610842750E45 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +132,23 @@
 			path = niuniuUITests;
 			sourceTree = "<group>";
 		};
+		9017DB1E3FC1F22FA032D849 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				918C50F35E88EF8B726ACDCA /* Pods-niuniu.debug.xcconfig */,
+				4D1B462C08D83DE7F81112F1 /* Pods-niuniu.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FFE5DF424921610842750E45 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8FD026FFA03F9CBFFA16C22B /* Pods_niuniu.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +156,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0475EE3F2238DFDC009A7560 /* Build configuration list for PBXNativeTarget "niuniu" */;
 			buildPhases = (
+				D28508A9B5F09158D3498050 /* [CP] Check Pods Manifest.lock */,
 				0475EE132238DFD9009A7560 /* Sources */,
 				0475EE142238DFD9009A7560 /* Frameworks */,
 				0475EE152238DFD9009A7560 /* Resources */,
+				4CAAA0141E00EDE291482C09 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -250,6 +276,55 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4CAAA0141E00EDE291482C09 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-niuniu/Pods-niuniu-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-niuniu/Pods-niuniu-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D28508A9B5F09158D3498050 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-niuniu-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0475EE132238DFD9009A7560 /* Sources */ = {
@@ -430,6 +505,7 @@
 		};
 		0475EE402238DFDC009A7560 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 918C50F35E88EF8B726ACDCA /* Pods-niuniu.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -448,6 +524,7 @@
 		};
 		0475EE412238DFDC009A7560 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D1B462C08D83DE7F81112F1 /* Pods-niuniu.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
