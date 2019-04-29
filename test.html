@@ -21,8 +21,8 @@
 
 <body>
     <div id="guide">
-        <div v-if="inWeixin">abc</div>
-        <div class="jump" v-if="inWeixin == false" :style="guideStyle">
+        <div v-if="inWeixin==false">abc</div>
+        <div class="jump" v-if="inWeixin" :style="guideStyle">
             <img style="width: 415px; height:124px;" src="http://scand75.gz01.bdysite.com/ll/?i=20190127135202631.png?,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDYyNDk5Nw==,size_16,color_FFFFFF,t_70"></img>
         </div>
     </div>
